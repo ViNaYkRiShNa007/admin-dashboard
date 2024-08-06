@@ -9,9 +9,9 @@ import { SiBentobox } from "react-icons/si";
 
 const Navbar = ({sideBarToggle,setSideBarToggle}) => {
   return (
-    <nav className="primary-color px-4 py-3 flex justify-between ml-64">
+    <nav className="primary-color px-4 py-3 flex justify-between ">
       <div className="flex items-center text-xl">
-        <FaBars className="text-white me-4 cursor-pointer" />
+        <FaBars className="text-white me-4 cursor-pointer" onClick={()=>{setSideBarToggle(!sideBarToggle)}}/>
         <span className="text-white font-semibold"><SiBentobox/></span>
       </div>
       <div className="flex items-center gap-x-5">

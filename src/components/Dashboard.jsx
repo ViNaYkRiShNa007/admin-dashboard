@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Dashboard = ({sideBarToggle,setSideBarToggle}) => {
   return (
-    <div className='w-full'>
+    <div className={`${sideBarToggle?"":"ml-64"} w-full`}>
       <Navbar sideBarToggle={sideBarToggle} setSideBarToggle={setSideBarToggle}/>
     </div>
   )

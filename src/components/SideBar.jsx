@@ -9,7 +9,7 @@ import { IoLogOut } from "react-icons/io5";
 
 const SideBar = ({sideBarToggle}) => {
   return (
-    <div className="w-64  primary-color text-white fixed h-full p-2">
+    <div className={`${sideBarToggle ? 'hidden':'block'} w-64  primary-color text-white fixed h-full p-2`}>
       <h1 className="font-sans text-2xl font-bold p-3">Admin Dashboard</h1>
       <hr />
       <ul>
