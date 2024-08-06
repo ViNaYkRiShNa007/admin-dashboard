@@ -7,7 +7,7 @@ import { SiBentobox } from "react-icons/si";
 
 
 
-const Navbar = () => {
+const Navbar = ({sideBarToggle,setSideBarToggle}) => {
   return (
     <nav className="primary-color px-4 py-3 flex justify-between ml-64">
       <div className="flex items-center text-xl">
