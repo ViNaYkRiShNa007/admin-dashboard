@@ -6,7 +6,7 @@ function App() {
   const [sideBarToggle,setSideBarToggle] = useState(false);
   return (
     <>
-      <div className="flex">
+      <div className="flex ">
         <SideBar sideBarToggle={sideBarToggle}/>
         <Dashboard sideBarToggle={sideBarToggle} setSideBarToggle={setSideBarToggle}/>
       </div>

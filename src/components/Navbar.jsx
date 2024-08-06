@@ -21,7 +21,7 @@ const Navbar = ({sideBarToggle,setSideBarToggle}) => {
               <FaSearch color="white"/>
             </button>
           </span>
-          <input type="text" className="secondary-color w-full px-4 py-1 pl-12 rounded shadow outline-none hidden md:block" placeholder="Search"/>
+          <input type="text" className="text-white secondary-color w-full px-4 py-1 pl-12 rounded shadow outline-none hidden md:block" placeholder="Search"/>
         </div>
         <div><IoIosMail color="white" size={25} className="cursor-pointer"/></div>
         <div><IoMdSettings color="white" size={20} className="cursor-pointer"/></div>
