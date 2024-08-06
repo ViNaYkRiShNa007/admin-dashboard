@@ -70,9 +70,15 @@
 
 @layer components{
   .primary-color{
-    @apply bg-slate-700;
+    @apply bg-black;
   }
   .secondary-color{
     @apply bg-slate-500;
   }
 }
+body{
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */

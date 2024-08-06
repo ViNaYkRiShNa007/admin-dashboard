@@ -3,6 +3,9 @@ import Navbar from "./Navbar";
 import Stats from "./Stats";
 import StatInfo from "./StatInfo";
 import ProgressBar from "./ProgressBar";
+import Chart from "./Chart";
+import Tables from "./Tables";
+import Goals from "./Goals";
 
 const Dashboard = ({ sideBarToggle, setSideBarToggle }) => {
   return (
@@ -11,26 +14,38 @@ const Dashboard = ({ sideBarToggle, setSideBarToggle }) => {
         sideBarToggle={sideBarToggle}
         setSideBarToggle={setSideBarToggle}
       />
-      <div class="m-4 flex justify-center flex-wrap gap-4">
+      <div class="m-4 flex justify-evenly flex-wrap gap-4">
         <div className="column1">
-          <div className="flex flex-col flex-wrap">
-            <div><Stats/></div>
-            <div>chart</div>
-            <div>table</div>
+          <div className="flex flex-col space-y-5 flex-wrap">
+            <div>
+              <Stats />
+            </div>
+            <div>
+              <Chart />
+            </div>
+            <div>
+              <Tables />
+            </div>
           </div>
         </div>
         <div className="column2">
-        <div className="flex flex-col  flex-wrap">
+          <div className="flex flex-col space-y-5  flex-wrap">
             <div className="">
-              <StatInfo info={"Net Profit"} bg={"bg-slate-400"} number={"$6749 ▲3%"}>
-                <ProgressBar/>
+              <StatInfo
+                info={"Net Profit"}
+                bg={"bg-slate-400"}
+                number={"$6749"}
+                status={"▲3%"}
+              >
+                <ProgressBar />
               </StatInfo>
-              </div>
-            <div>goals</div>
+            </div>
+            <div>
+              <Goals />
+            </div>
             <div>feedback</div>
-          </div>          
+          </div>
         </div>
-        
       </div>
     </div>
   );
