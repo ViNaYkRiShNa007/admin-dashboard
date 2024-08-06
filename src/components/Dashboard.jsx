@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Stats from "./Stats";
 import StatInfo from "./StatInfo";
+import ProgressBar from "./ProgressBar";
 
 const Dashboard = ({ sideBarToggle, setSideBarToggle }) => {
   return (
@@ -10,7 +11,7 @@ const Dashboard = ({ sideBarToggle, setSideBarToggle }) => {
         sideBarToggle={sideBarToggle}
         setSideBarToggle={setSideBarToggle}
       />
-      <div class="m-4 flex flex-wrap gap-4">
+      <div class="m-4 flex justify-center flex-wrap gap-4">
         <div className="column1">
           <div className="flex flex-col flex-wrap">
             <div><Stats/></div>
@@ -19,9 +20,11 @@ const Dashboard = ({ sideBarToggle, setSideBarToggle }) => {
           </div>
         </div>
         <div className="column2">
-        <div className="flex flex-col flex-wrap">
-            <div className="w-full">
-              <StatInfo/>
+        <div className="flex flex-col  flex-wrap">
+            <div className="">
+              <StatInfo info={"Net Profit"} bg={"bg-slate-400"} number={"$6749 ▲3%"}>
+                <ProgressBar/>
+              </StatInfo>
               </div>
             <div>goals</div>
             <div>feedback</div>

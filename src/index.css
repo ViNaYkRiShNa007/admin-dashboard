@@ -70,9 +70,9 @@
 
 @layer components{
   .primary-color{
-    @apply bg-[#180161];
+    @apply bg-slate-700;
   }
   .secondary-color{
-    @apply bg-[#4F1787];
+    @apply bg-slate-500;
   }
 }
